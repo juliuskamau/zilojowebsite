@@ -55,12 +55,7 @@ navlinks.forEach(function(link){
     });
 });
 
-// Markdown parser using
-// https://github.com/showdownjs/showdown
-let parser = new showdown.Converter();
-parser.setFlavor('github');
-parser.setOption('ghCompatibleHeaderId', true);
-parser.setOption('prefixHeaderId', false);
+
 
 // Parse the markdown on the page
 let markdown = document.querySelectorAll('.markdown');
@@ -120,6 +115,31 @@ $('a[href*="#"]:not([href="#"]):not([href="#show"]):not([href="#hide"])').click(
 });
 
 
+
+
+$(document).ready(function() {
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+      autoplay: true,
+      items: 1,
+      nav: true,
+      loop: true,
+      autoplayHoverPause: true,
+      animateOut: 'slideOutUp',
+      animateIn: 'slideInUp',
+      autoplayTimeout: 5000,
+      autoplayHoverPause: false,
+    });
+    $('.play').on('click', function() {
+    owl.trigger('play.owl.autoplay', [1000]);
+      console.log('play');
+  })
+  $('.stop').on('click', function() {
+    owl.trigger('stop.owl.autoplay');
+         console.log('stop');
+  });
+  });
+  
 
 
 

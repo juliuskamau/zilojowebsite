@@ -7,6 +7,8 @@
     <title>Foundation for Sites</title>
     <link rel="stylesheet" href="css/foundation.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
     <link rel="stylesheet" href="css/app.css">
 
   </head>
@@ -14,10 +16,9 @@
     <div class="grid-container full">
         <div class="sidebar">
             <div class="sidebar-toggle waves-effect">
-              <span class="right">
-                   <i class="fas fa-bars"></i>
-              </span>
-               
+                   
+                <span><i class="fas fa-bars"></i></span>
+            
             </div>
             <ul class="sidebar-menu custom-scrollbar">
                 <li>
@@ -56,7 +57,7 @@
                         <i class="fas fa-rss-square"></i>
 BLOG
                     </a>
-                    <!--
+                 
                     <ul>
                         <li>
                             <a href="#list" class="waves-effect">
@@ -71,7 +72,7 @@ BLOG
                             </a>
                         </li>
                     </ul>
-                  -->
+                 
                 </li>
                 <li>
                     <a href="#code" class="waves-effect">
@@ -80,22 +81,45 @@ BLOG
                     </a>
                 </li>
             </ul>
+
+            <div class="social">
+
+                      <a class="color-black" href="https://www.facebook.com/TuskerLager/" target="_blank"><i class="fab-4 fab fa-facebook-f"></i></a>
+                 
+                      <a class="color-black" href="https://www.instagram.com/tuskerlagerke/" target="_blank"><i class="fab-4 fab fa-instagram"></i></a>
+                 
+                      <a class="color-black" href="https://twitter.com/tuskerlager" target="_blank"><i class="fab-4 fab fa-twitter"></i></a>
+                
+                      <a class="color-black" href="https://www.youtube.com/c/tuskerlager" target="_blank"><i class="fab-4 fab fa-youtube"></i></a>
+
+            </div><!--- /social end -->
+
         </div>
         
         <div class="wrapper">
-            <header>
-                <div class="container">
-                    <div class="header-content content-wrapper">
-                        <div class="header-title">
-                            <h1>Markdown App Template</h1>
-                        </div>
-                    </div>
-                </div>
-            </header>
-            <div class="body custom-scrollbar">
-                <div class="container">
+                <div class="owl-carousel">
+                        <div class="owl-item jarallax active">           
+                      <img class="jarallax-img" src="https://placehold.it/1200x600/CCCCCC?text=Slide-1" alt="Space">       
+                       </div>
+                       <div class="owl-item jarallax">
+                  <img class="jarallax-img" src="https://placehold.it/1200x600/CCCCCC?text=Slide-1" alt="Space">
+                       </div>
+                         <div class="owl-item jarallax">
+                              
+                     <img class="jarallax-img" src="https://placehold.it/1200x600/CCCCCC?text=Slide-1" alt="Space">
+                                    
+                       </div>
+                     </div>
+                     <div class="button secondary play">Play</div>
+                     <div class="button secondary stop">Stop</div>
+
+
+
+     
+
                  
-                        <img src="http://via.placeholder.com/1200x500">
+                      
+
                         <div class="grid-x" id="intro">
                             <div class="large-4 cell"><img src="http://via.placeholder.com/376x223/000"></div>
                             <div class="large-4 cell"><img src="http://via.placeholder.com/376x223/BCCD31"></div>
@@ -104,8 +128,7 @@ BLOG
                             <div class="large-4 cell"><img src="http://via.placeholder.com/376x223/BCCD31"></div>
                             <div class="large-4 cell"><img src="http://via.placeholder.com/376x223/EFEFEF"></div>
                         </div>
-            </div>
-        </div>
+          
     </div>
 
 
@@ -115,6 +138,12 @@ BLOG
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/owl.carousel.min.js"></script>
+    <script src="js/vendor/jarallax.min.js"></script> 
+    <script src="js/vendor/jarallax-video.min.js"></script> 
+    <script src="js/vendor/jarallax-element.min.js"></script> 
+    <script src="js/vendor/blazy.js"></script> 
+  
     <script src="js/app.js"></script>
   </body>
 </html>
