@@ -1,149 +1,542 @@
-<!doctype html>
-<html class="no-js" lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
-    <link rel="stylesheet" href="css/foundation.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
-    <link rel="stylesheet" href="css/app.css">
-
-  </head>
-  <body>
-    <div class="grid-container full">
-        <div class="sidebar">
-            <div class="sidebar-toggle waves-effect">
-                   
-                <span><i class="fas fa-bars"></i></span>
-            
-            </div>
-            <ul class="sidebar-menu custom-scrollbar">
-                <li>
-                    <a href="#intro" class="waves-effect">
-                       <i class="fas fa-home"></i>
-                        HOME
-                    </a>
-                </li>
-                <li>
-                    <a href="#text" class="waves-effect">
-                        <i class="fas fa-book-reader"></i>
-                        ABOUT
-                    </a>
-                </li>
-                <li>
-                    <a href="#blockquote" class="waves-effect">
-                        <i class="fas fa-cogs"></i>
-                        SERVICES
-                    </a>
-                </li>
-                <li>
-                    <a href="#table" class="waves-effect">
-                        <i class="far fa-images"></i>
-                        WORK
-                    </a>
-                </li>
-                <li>
-                    <a href="#table" class="waves-effect">
-                        <i class="fas fa-briefcase"></i>
-
-                        CAREER
-                    </a>
-                </li>
-                <li>
-                    <a href="#list" class="waves-effect">
-                        <i class="fas fa-rss-square"></i>
-BLOG
-                    </a>
-                 
-                    <ul>
-                        <li>
-                            <a href="#list" class="waves-effect">
-                                <i class="material-icons">list</i>
-                                List
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#to-do-list" class="waves-effect">
-                                <i class="material-icons">playlist_add_check</i>
-                                To-do List
-                            </a>
-                        </li>
-                    </ul>
-                 
-                </li>
-                <li>
-                    <a href="#code" class="waves-effect">
-                        <i class="far fa-envelope"></i>
-                        CONTACT
-                    </a>
-                </li>
-            </ul>
-
-            <div class="social">
-
-                      <a class="color-black" href="https://www.facebook.com/TuskerLager/" target="_blank"><i class="fab-4 fab fa-facebook-f"></i></a>
-                 
-                      <a class="color-black" href="https://www.instagram.com/tuskerlagerke/" target="_blank"><i class="fab-4 fab fa-instagram"></i></a>
-                 
-                      <a class="color-black" href="https://twitter.com/tuskerlager" target="_blank"><i class="fab-4 fab fa-twitter"></i></a>
-                
-                      <a class="color-black" href="https://www.youtube.com/c/tuskerlager" target="_blank"><i class="fab-4 fab fa-youtube"></i></a>
-
-            </div><!--- /social end -->
-
-        </div>
-        
-        <div class="wrapper">
-                <div class="owl-carousel">
-                        <div class="owl-item jarallax active">           
-                      <img class="jarallax-img" src="https://placehold.it/1200x600/CCCCCC?text=Slide-1" alt="Space">       
-                       </div>
-                       <div class="owl-item jarallax">
-                  <img class="jarallax-img" src="https://placehold.it/1200x600/CCCCCC?text=Slide-1" alt="Space">
-                       </div>
-                         <div class="owl-item jarallax">
-                              
-                     <img class="jarallax-img" src="https://placehold.it/1200x600/CCCCCC?text=Slide-1" alt="Space">
-                                    
-                       </div>
-                     </div>
-                     <div class="button secondary play">Play</div>
-                     <div class="button secondary stop">Stop</div>
+<!DOCTYPE html>
+<html class="no-js" dir="ltr" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="ie=edge" http-equiv="x-ua-compatible">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>Foundation for Sites</title>
+	<link href="css/foundation.min.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+	<link href="css/foundation.min.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
+	<link href="css/owl.carousel.min.css" rel="stylesheet">
+	<link href="css/app.css" rel="stylesheet">
+</head>
+<body>
+	<div class="grid-container full">
+		<div class="sidebar">
+			<div class="sidebar-transparent">
+				<div class="sidebar-toggle waves-effect">
+					<span class="menu"><i class="fas fa-bars"></i></span>
+				</div>
+				<ul class="sidebar-menu custom-scrollbar">
+					<li>
+						<a class="waves-effect" href="#intro"><i class="fas fa-home"></i> HOME</a>
+					</li>
+					<li>
+						<a class="waves-effect" href="#text"><i class="fas fa-book-reader"></i> ABOUT</a>
+					</li>
+					<li>
+						<a class="waves-effect" href="#text"><i class="fas fa-camera-retro"></i> OUR TEAM</a>
+					</li>
+					<li>
+						<a class="waves-effect" href="#table"><i class="far fa-images"></i> WORK</a>
+					</li>
+					<li>
+						<a class="waves-effect" href="#blockquote"><i class="fas fa-cogs"></i> SERVICES</a>
+					</li>
+					<li>
+						<a class="waves-effect" href="#table"><i class="fas fa-briefcase"></i> CAREER</a>
+					</li>
+					<li>
+						<a class="waves-effect" href="#list"><i class="fas fa-rss-square"></i> BLOG</a>
+					</li>
+					<li>
+						<a class="waves-effect" href="#code"><i class="far fa-envelope"></i> CONTACT</a>
+					</li>
+				</ul>
+				<div class="social">
+					<h1 class="center color-white padding-top-20 padding-bottom-20">Follow As </h1><a class="color-black" href="https://www.facebook.com/TuskerLager/" target="_blank"><i class=
+					"fab-4 fab fa-facebook-f"></i></a> <a class="color-black" href="https://www.instagram.com/tuskerlagerke/" target="_blank"><i class="fab-4 fab fa-instagram"></i></a> <a class="color-black" href=
+					"https://twitter.com/tuskerlager" target="_blank"><i class="fab-4 fab fa-twitter"></i></a> <a class="color-black" href="https://www.youtube.com/c/tuskerlager" target="_blank"><i class=
+					"fab-4 fab fa-youtube"></i></a>
+				</div><!-- /social end -->
+			</div>
+		</div>
+		<div class="wrapper">
+			<header class="full-width">
+				<div class="grid-x grid-padding-x">
+					<div class="large-4 cell"></div>
+					<div class="large-4 cell">
+                        <img alt="AUR" class="b-lazy" data-src="assets/icon/logo.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                    </div>
+					<div class="large-4 cell"></div>
+				</div>
+			</header>
+			<figure class="banner relative">
+				<div class="owl-carousel owl-theme">
 
 
+                        <div class="jarallax image-loader active">
+                                <img alt="AUR" class="b-lazy jarallax-img" data-src="assets/home/banner/banner04.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                                <figcaption class="overlay">
+                                    <div class="table">
+                                        <div class="wrapper-caption">
+                                                <h1>Digital Media Award</h1>
+                                                <p>Digital brand of the year 2018</p><a class="button" href="#">View Project</a>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </div>
 
+					<div class="jarallax image-loader ">
+						<img alt="AUR" class="b-lazy jarallax-img" data-src="assets/home/banner/banner01.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+						<figcaption class="overlay">
+							<div class="table">
+								<div class="wrapper-caption">
+									<h1>Lorem Ipsum</h1>
+									<p>Lorem Ipsum is simply</p><a class="button uppercase" href="#">Explore</a>
+								</div>
+							</div>
+						</figcaption>
+                    </div>
      
 
-                 
+
+
+					<div class="jarallax image-loader ">
+                            <img alt="AUR" class="b-lazy jarallax-img" data-src="assets/home/banner/banner02.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                            <figcaption class="overlay">
+                                <div class="table">
+                                    <div class="wrapper-caption">
+                                        <h1>Lorem Ipsum</h1>
+                                        <p>Lorem Ipsum is simply</p><a class="button uppercase" href="#">Explore</a>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </div>
+
+
+
+                        <div class="jarallax image-loader ">
+                                <img alt="AUR" class="b-lazy jarallax-img" data-src="assets/home/banner/banner03.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                                <figcaption class="overlay">
+                                    <div class="table">
+                                        <div class="wrapper-caption">
+                                            <h1>Lorem Ipsum</h1>
+                                            <p>Lorem Ipsum is simply</p><a class="button uppercase" href="#">Explore</a>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </div>
+
+
+
+
+
+				</div>
+            </figure>
+            <div id="about">
+			<div class="grid-x">
+				<div class="large-12 cell">
+					<div class="jarallax" data-video-src="https://www.youtube.com/embed/735smU6hD6E">
+						<figcaption class="overlay">
+							<div class="table">
+								<div class="wrapper-caption caption-override">
+									<h1>What Is Zilojo?</h1>
+									<p>We are young, aspirational, mobile, dynamic and African. We understand Africa, its intricacies, where we have come from and most importantly, where we are going. Zilojo's approach to
+									business offers a unique blend of new and traditional media ideas that demonstrate a deep understanding of the business and cultural setting that it exists in.</p>
+								</div>
+							</div>
+						</figcaption>
+					</div>
+				</div>
+            </div>
+        </div><!-- /#about -->
+        <div id="ourteam">
+			<div class="grid-x">
+				<div class="large-4 cell">
+                       
+                                <img alt="AUR" class="b-lazy" data-src="assets/home/ourteam/mwaura.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+        
+                          
+                </div>
+				<div class="large-4 cell">
+                        <img alt="AUR" class="b-lazy" data-src="assets/home/ourteam/mwaura.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+
+                </div>
+                <div class="large-4 cell">
+                        <img alt="AUR" class="b-lazy" data-src="assets/home/ourteam/mwaura.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+
+                </div>
+                <div class="large-4 cell">
+                        <img alt="AUR" class="b-lazy" data-src="assets/home/ourteam/mwaura.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+
+                </div>
+                <div class="large-4 cell">
+                        <img alt="AUR" class="b-lazy" data-src="assets/home/ourteam/mwaura.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+
+                </div>
+                <div class="large-4 cell">
+                        <img alt="AUR" class="b-lazy" data-src="assets/home/ourteam/mwaura.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                </div>
+            </div>
+        </div><!-- /#our team -->
+			<div  id="work">
+           
+
+                       
+                                    <div class="wrapper-caption center margin-top-30 margin-bottom-30 clear">
+                                        <h1>Our Work
+                                            </h1>
+                                        <p>Some of the great ideas that we brought to life.</p>
+                                    </div>
+                               
+
+                    <ul class="tabs tabs-override margin-top-30 center" data-responsive-accordion-tabs="tabs medium-accordion large-tabs" id="example-tabs">
+                            <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
+                            <li class="tabs-title"><a href="#panel2">Tab 2</a></li>
+                            <li class="tabs-title"><a href="#panel3">Tab 3</a></li>
+                            <li class="tabs-title"><a href="#panel4">Tab 4</a></li>
+                            <li class="tabs-title"><a href="#panel5">Tab 5</a></li>
+                            <li class="tabs-title"><a href="#panel6">Tab 6</a></li>
+                          </ul>
+
+
+                          <div class="tabs-content" data-tabs-content="example-tabs">
+                                <div class="tabs-panel is-active" id="panel1">
+                                 
+                                  <div class="grid-x">
+                                        <div class="large-6 cell big-image">
+                                            <div class="jarallax" data-speed="0.2" data-video-src="mp4:assets/home/work/utado.mp4">
+                                                    <img alt="AUR" class="b-lazy jarallax-img" data-src="assets/home/work/work01.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+
+
+                                                </div>   
+                                        </div>
+                                        <div class="large-6 cell work-thumb-image" data-speed="0">
+                                            <div class="jarallax">
+                                                    <img alt="AUR" class="b-lazy jarallax-img" data-src="assets/home/work/work01.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                                                </div>
+                                            <div class="jarallax" data-speed="1.4">
+                                                    <img alt="AUR" class="b-lazy jarallax-img" data-src="assets/home/work/work03.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                                                </div>
+                                        </div>
+                                       </div>
+
+
+                                       <div class="grid-x">
+                                            <div class="large-6 cell work-thumb-image" data-speed="0">
+                                                <div class="jarallax">
+                                                        <img alt="AUR" class="b-lazy jarallax-img" data-src="assets/home/work/work04.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                                                </div>
+                                                <div class="jarallax" data-speed="1.4">
+                                                        <img alt="AUR" class="b-lazy jarallax-img" data-src="assets/home/work/work05.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                                                </div>
+                                            </div>
+
+                                            <div class="large-6 cell">
+                                                    <div class="jarallax" data-speed="0.2">
+                                                            <img alt="AUR" class="b-lazy jarallax-img" data-src="assets/home/work/work06.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                                                    </div>   
+                                                </div>
+
+                                           </div>
+
+
+
+                                           <div class="grid-x">
+                                                <div class="large-6 cell">
+                                                        <div class="jarallax" data-speed="0.2">
+                                                                <img alt="AUR" class="b-lazy jarallax-img" data-src="assets/home/work/work01.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                                                        </div>   
+                                                    </div>
+
+                                                <div class="large-6 cell work-thumb-image" data-speed="0">
+                                                    <div class="jarallax">
+                                                            <img alt="AUR" class="b-lazy jarallax-img" data-src="assets/home/work/work01.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                                                    </div>
+                                                    <div class="jarallax" data-speed="1.4">
+                                                            <img alt="AUR" class="b-lazy jarallax-img" data-src="assets/home/work/work01.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                                                    </div>
+                                                </div>
+    
+                                               </div>
+
+
+
+
+
+
+
+
+                                </div>
+                                <div class="tabs-panel" id="panel2">
+                                  <p>two</p>
+                                  <img class="thumbnail" src="assets/img/generic/rectangle-7.jpg">
+                                </div>
+                                <div class="tabs-panel" id="panel3">
+                                  <p>three</p>
+                                  <p>Check me out! I'm a super cool Tab panel with text content!</p>
+                                </div>
+                                <div class="tabs-panel" id="panel4">
+                                  <p>four</p>
+                                  <img class="thumbnail" src="assets/img/generic/rectangle-2.jpg">
+                                </div>
+                                <div class="tabs-panel" id="panel5">
+                                  <p>five</p>
+                                  <p>Check me out! I'm a super cool Tab panel with text content!</p>
+                                </div>
+                                <div class="tabs-panel" id="panel6">
+                                  <p>six</p>
+                                  <img class="thumbnail" src="assets/img/generic/rectangle-8.jpg">
+                                </div>
+                              </div>
+
+
+
+
+
                       
 
-                        <div class="grid-x" id="intro">
-                            <div class="large-4 cell"><img src="http://via.placeholder.com/376x223/000"></div>
-                            <div class="large-4 cell"><img src="http://via.placeholder.com/376x223/BCCD31"></div>
-                            <div class="large-4 cell"><img src="http://via.placeholder.com/376x223/EFEFEF"></div>
-                            <div class="large-4 cell"><img src="http://via.placeholder.com/376x223/000"></div>
-                            <div class="large-4 cell"><img src="http://via.placeholder.com/376x223/BCCD31"></div>
-                            <div class="large-4 cell"><img src="http://via.placeholder.com/376x223/EFEFEF"></div>
+
+            </div><!-- /#work -->
+        
+
+        <div id="services">
+                <div class="wrapper-caption center margin-top-30 margin-bottom-30 clear">
+                        <h1>Our Services
+    
+                            </h1>
+                        <p>Explore our capabilities and expertise in creative, strategy, digital technology, user-experience and new media marketing.</p>
+                    </div>
+
+            <div class="grid-x">
+                    <div class="large-4 cell"><img src="http://via.placeholder.com/376x223/000"></div>
+                    <div class="large-4 cell"><img src="http://via.placeholder.com/376x223/BCCD31"></div>
+                    <div class="large-4 cell"><img src="http://via.placeholder.com/376x223/EFEFEF"></div>
+                    <div class="large-4 cell"><img src="http://via.placeholder.com/376x223/000"></div>
+                    <div class="large-4 cell"><img src="http://via.placeholder.com/376x223/BCCD31"></div>
+                    <div class="large-4 cell"><img src="http://via.placeholder.com/376x223/EFEFEF"></div>
+                </div>
+
+            </div>
+
+            <div id="Career">
+                    <div class="wrapper-caption center margin-top-30 margin-bottom-30 clear">
+                            <h1>Work with Us
+        
+                                </h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                         </div>
-          
-    </div>
+    
+                <div class="grid-x grid-padding-x">
+                        <div class="large-2 cell">
+                               <h1>Web Developer</h1> 
+                        </div>
+
+                        <div class="large-8 cell border-sides">
+                                We are looking for a skilled Web Developer who will develop quality web applications using LAMP stack.
+
+                                You will be responsible for development of websites, webs applications, and other web development work.
+                                
+                                If you are highly efficient and passionate about web development, give us a chance to meet you. In addition to skill, we are looking for approachable individuals who are committed and have good character traits.
+                        </div>
+
+                        <div class="large-2 cell center">
+                                <i class="far fa-calendar-alt"></i>
+                                <span class="clear display-block">
+                                        08/02/2018
+                                    </span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="grid-x grid-padding-x">
+                            <div class="large-2 cell">
+                                   <h1>Web Developer</h1> 
+                            </div>
+    
+                            <div class="large-8 cell border-sides">
+                                    We are looking for a skilled Web Developer who will develop quality web applications using LAMP stack.
+    
+                                    You will be responsible for development of websites, webs applications, and other web development work.
+                                    
+                                    If you are highly efficient and passionate about web development, give us a chance to meet you. In addition to skill, we are looking for approachable individuals who are committed and have good character traits.
+                            </div>
+    
+                            <div class="large-2 cell center">
+                                    <i class="far fa-calendar-alt"></i>
+                                    <span class="clear display-block">
+                                            08/02/2018
+                                        </span>
+                            </div>
+    
+                        </div>
+
+
+
+                    
+    
+            </div>
+
+
+
+            <div id="blog">
+                    <div class="wrapper-caption center margin-top-30 margin-bottom-30 clear">
+                            <h1>Work with Us
+                                </h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            
+                        </div>
+    
+
+                        <div class="grid-x grid-padding-x">
+                                <div class="large-4 cell">
+                                    <img src="http://via.placeholder.com/376x223/000">
+                                    <div class="callout primary">
+                                        <h1>
+                                                The Art Of The Dandy
+                                        </h1>
+                                        <p>
+                                         Mention the word ‘suits’ and the first person that comes to mind is the image of maverick corporate lawyer ‘Harvey Spector’ in the hit tv series Suits.  
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="large-4 cell">
+                                        <div class="large-4 cell">
+                                                <img src="http://via.placeholder.com/376x223/000">
+                                                <div class="callout primary">
+                                                    <h1>
+                                                            The Art Of The Dandy
+                                                    </h1>
+                                                    <p>
+                                                     Mention the word ‘suits’ and the first person that comes to mind is the image of maverick corporate lawyer ‘Harvey Spector’ in the hit tv series Suits.  
+                                                    </p>
+                                                </div>
+                                            </div>
+                                </div>
+                                <div class="large-4 cell">
+                                        <div class="large-4 cell">
+                                                <img src="http://via.placeholder.com/376x223/000">
+                                                <div class="callout primary">
+                                                    <h1>
+                                                            The Art Of The Dandy
+                                                    </h1>
+                                                    <p>
+                                                     Mention the word ‘suits’ and the first person that comes to mind is the image of maverick corporate lawyer ‘Harvey Spector’ in the hit tv series Suits.  
+                                                    </p>
+                                                </div>
+                                            </div>
+                                </div>
+                                <div class="large-4 cell">
+                                        <div class="large-4 cell">
+                                                <img src="http://via.placeholder.com/376x223/000">
+                                                <div class="callout primary">
+                                                    <h1>
+                                                            The Art Of The Dandy
+                                                    </h1>
+                                                    <p>
+                                                     Mention the word ‘suits’ and the first person that comes to mind is the image of maverick corporate lawyer ‘Harvey Spector’ in the hit tv series Suits.  
+                                                    </p>
+                                                </div>
+                                            </div>
+                                </div>
+                                <div class="large-4 cell">
+                                        <div class="large-4 cell">
+                                                <img src="http://via.placeholder.com/376x223/000">
+                                                <div class="callout primary">
+                                                    <h1>
+                                                            The Art Of The Dandy
+                                                    </h1>
+                                                    <p>
+                                                     Mention the word ‘suits’ and the first person that comes to mind is the image of maverick corporate lawyer ‘Harvey Spector’ in the hit tv series Suits.  
+                                                    </p>
+                                                </div>
+                                            </div>
+                                </div>
+                                <div class="large-4 cell">
+                                        <div class="large-4 cell">
+                                                <img src="http://via.placeholder.com/376x223/000">
+                                                <div class="callout primary">
+                                                    <h1>
+                                                            The Art Of The Dandy
+                                                    </h1>
+                                                    <p>
+                                                     Mention the word ‘suits’ and the first person that comes to mind is the image of maverick corporate lawyer ‘Harvey Spector’ in the hit tv series Suits.  
+                                                    </p>
+                                                </div>
+                                            </div>
+                                </div>
+                            </div>
+
+
+                    
+    
+            </div>
+
+
+
+
+            <div id="contact">
+
+
+                        <div class="jarallax image-loader active">
+                        
+                                <img alt="AUR" class="b-lazy jarallax-img" data-src="assets/home/footer/footer.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+
+                               
+                                        <div class="wrapper-caption center clear">
+                                                <h1>Work with Us
+                                                    </h1>
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                                
+                                            </div>
+
+                              
+
+                                    
+                                    <form>
+                                            <input type="text" placeholder="Name"/>
+                                            <input type="text" placeholder="Email"/>
+                                            <input type="text" placeholder="Subject"/>
+                                            <textarea placeholder="Message"></textarea>
+                                            <div class="center">
+                                                    <input type="submit" class="button color-white"  value="Submit"/>
+                                            </div>
+                                        
+                                        </form>
+
+
+
+                        
+                        </div>
+
+                    
+    
+            </div>
 
 
 
 
 
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/owl.carousel.min.js"></script>
-    <script src="js/vendor/jarallax.min.js"></script> 
-    <script src="js/vendor/jarallax-video.min.js"></script> 
-    <script src="js/vendor/jarallax-element.min.js"></script> 
-    <script src="js/vendor/blazy.js"></script> 
-  
-    <script src="js/app.js"></script>
-  </body>
+
+
+		</div>
+		<script src="js/vendor/jquery.js">
+		</script> 
+		<script src="js/vendor/ofi.min.js">
+		</script> 
+		<script src="js/vendor/what-input.js">
+		</script> 
+		<script src="js/vendor/foundation.min.js">
+		</script> 
+		<script src="js/vendor/jarallax.min.js">
+		</script> 
+		<script src="js/vendor/jarallax-video.min.js">
+		</script> 
+		<script src="js/vendor/jarallax-element.min.js">
+		</script> 
+		<script src="js/vendor/blazy.js">
+		</script> 
+		<script src="js/vendor/scrollreveal.min.js">
+		</script> 
+		<script src="js/vendor/owl.carousel.min.js">
+		</script> 
+		<script src="js/app.js">
+		</script>
+	</div>
+</body>
 </html>

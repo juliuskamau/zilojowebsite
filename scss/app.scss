@@ -10,23 +10,614 @@ $sidebarBackground: #37474F;
 $sidebarFontColour: #EEEEEE;
 $sidebarActionColour: rgba(255, 255, 255, 0.05);
 
-body {
-    margin: 0;
-    overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: greyscale;
-    text-rendering: optimizeLegibility;
-    line-height: 1.5;
-    color: $mainFontColour;
+/**==========================================**
+        COMMON CSS 
+ **===========================================**/
+ body, html {
+    color: #222;
+    font: 400 14px "Karla","Open Sans","Arial",sans-serif;
+}
+.bold {
+    font-weight: 700;
+    font: 400 14px "Karla","Open Sans","Arial",sans-serif;
+}
+  
+  hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc; }
+  
+  .left {
+    float: left; }
+  
+  .right {
+    float: right; }
+  
+  .center {
+    margin: auto;
+    background-position: center;
+    text-align: center;
+    float: none; }
+  
+  .hide {
+    display: none; }
+  
+  .visibilty {
+    visibility: visible; }
+  
+  .inline li {
+    display: inline; }
+  
+  ul {
+    padding-left: 0px; }
+  
+  .list-style-none li {
+    list-style: none; }
+  
+  .display-block {
+    display: block; }
+  
+  .relative {
+    position: relative; }
+  
+  .absolute {
+    position: absolute; }
+  
+  .lowercase {
+    text-transform: lowercase; }
+  
+  .uppercase {
+    text-transform: uppercase; }
+  
+  .capitalize {
+    text-transform: capitalize; }
+  
+  .clr {
+    clear: both; }
+  
+  .full-width {
+    width: 100vw; }
+  
+  .full-height {
+    height: 100vh; }
+  
+  .overflow-hidden {
+    overflow: hidden; }
+  
+  a {
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    -webkit-transition: 0.6s ease-out;
+    -moz-transition: 0.6s ease-out;
+    transition: 0.6s ease-out; }
+  
+  a:focus, a:hover {
+    color: #C8C8C8; }
+  
+  .border-none {
+    border: none; }
+  
+  .backgroundwhite {
+    background: white; }
+  
+  .panel {
+    position: relative;
+    margin: 0 0 1rem 0;
+    padding: 1rem;
+    background: #EEEDEA;
+    color: #333333;
+    color: #0a0a0a; }
+  
+  .border-left {
+    border-left: solid 1px #000; }
+  
+  .line-height-normal {
+    line-height: normal; }
+  
+  .bullets-none {
+    list-style: none; }
+  
+  .background-transparent {
+    background: transparent !important; }
+  
+  .border-black {
+    border: 1px solid #000; }
+  
+  .border-white {
+    border: 1px solid #fff; }
+  
+  .fixed {
+    position: fixed; }
+  
+  .callout {
+    border-radius: 0px; }
+  
+  /**==========================================**
+          COMMON PADDING CSS 
+   **===========================================**/
+  .padding-0 {
+    padding: 0; }
+  
+  .padding-bottom-0 {
+    padding-bottom: 0; }
+  
+  .padding-top-5 {
+    padding-top: 5px; }
+  
+  .padding-bottom-5 {
+    padding-bottom: 5px; }
+  
+  .padding-top-10 {
+    padding-top: 10px; }
+  
+  .padding-bottom-10 {
+    padding-bottom: 10px; }
+  
+  .padding-top-15 {
+    padding-top: 15px; }
+  
+  .padding-bottom-15 {
+    padding-bottom: 15px; }
+  
+  .padding-top-20 {
+    padding-top: 20px; }
+  
+  .padding-bottom-20 {
+    padding-bottom: 20px; }
+  
+  .padding-top-25 {
+    padding-top: 25px; }
+  
+  .padding-bottom-25 {
+    padding-bottom: 25px; }
+  
+  .padding-top-30 {
+    padding-top: 35px; }
+  
+  .padding-bottom-30 {
+    padding-bottom: 35px; }
+  
+  .padding-left-30 {
+    padding-left: 30px; }
+  
+  /**==========================================**
+         COMMON MARGIN CSS 
+  **===========================================**/
+  .margin-0 {
+    margin: 0; }
+  
+  .margin-bottom-0 {
+    margin-bottom: 0; }
+  
+  .margin-top-5 {
+    margin-top: 5px; }
+  
+  .margin-bottom-5 {
+    margin-bottom: 5px; }
+  
+  .margin-top-10 {
+    margin-top: 10px; }
+  
+  .margin-bottom-10 {
+    margin-bottom: 10px; }
+  
+  .margin-top-15 {
+    margin-top: 15px; }
+  
+  .margin-bottom-15 {
+    margin-bottom: 15px; }
+  
+  .margin-top-20 {
+    margin-top: 20px; }
+  
+  .margin-bottom-20 {
+    margin-bottom: 20px; }
+  
+  .margin-top-25 {
+    margin-top: 25px; }
+  
+  .margin-bottom-25 {
+    margin-bottom: 25px; }
+  
+  .margin-top-30 {
+    margin-top: 30px; }
+  
+  .margin-bottom-30 {
+    margin-bottom: 30px; }
+  
+  .margin-top-35 {
+    margin-top: 35px; }
+  
+  .margin-bottom-35 {
+    margin-bottom: 35px; }
+  
+  
+  /**==========================================**
+           COMMON INPUT CSS 
+  **===========================================**/
+  input[type="text"],
+  input[type="password"],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="month"],
+  input[type="week"],
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="time"],
+  input[type="url"],
+  input[type="color"],
+  textarea,
+  select {
+    height: 3rem;
+    border-radius: 3px;
+    outline: none;
+    resize: none;
+    background: white;
+    box-shadow: none;
+    color: #808080;
+    width: 100%; }
+  
+  textarea {
+    height: 6rem; }
+  
+  input[type="text"]:focus,
+  input[type="password"]:focus,
+  input[type="date"]:focus,
+  input[type="datetime"]:focus,
+  input[type="datetime-local"]:focus,
+  input[type="month"]:focus,
+  input[type="week"]:focus,
+  input[type="email"]:focus,
+  input[type="number"]:focus,
+  input[type="search"]:focus,
+  input[type="tel"]:focus,
+  input[type="time"]:focus,
+  input[type="url"]:focus,
+  input[type="color"]:focus,
+  textarea:focus,
+  select:focus {
+    background: white; }
+  
+  input[type="text"]:hover,
+  input[type="password"]:hover,
+  input[type="date"]:hover,
+  input[type="datetime"]:hover,
+  input[type="datetime-local"]:hover,
+  input[type="month"]:hover,
+  input[type="week"]:hover,
+  input[type="email"]:hover,
+  input[type="number"]:hover,
+  input[type="search"]:hover,
+  input[type="tel"]:hover,
+  input[type="time"]:hover,
+  input[type="url"]:hover,
+  input[type="color"]:hover,
+  textarea:hover,
+  select:hover {
+    background: white; }
+  
+  input[type="checkbox"] {
+    margin: 5px 8px 0 0;
+    cursor: pointer; }
+  
+  input[type="number"] {
+    padding: 0 0 0 10px; }
+  
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    opacity: 1; }
+  
+  input[type="submit"] {
+    background-color: #000000;
+    color: #fff;
+    padding: 0.65em 1em;
+    -webkit-appearance: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none; }
+  
+  input[type="submit"]:hover, input[type="submit"]:focus {
+    color: #FFf;
+    background-color: #15499F; }
+  
+  select {
+    background: #fff url(../assets/icon/select-arrow.png) no-repeat 100% 0px; }
+  
+  select:hover {
+    background: #fff url(../assets/icon/select-arrow.png) no-repeat 100% -37px; }
+  
+
+  
+  /**==========================================**
+          LAGER BACKGROUND COLOR AND FONT COLOR CSS 
+  **===========================================**/
+  .green {
+    background: #BCCD31;
+    background-color: #BCCD31; }
+  
+  .black {
+    background: #000000; }
+  
+  .color-green {
+    color: #BCCD31; }
+  
+  .color-black {
+    color: #000; }
+  
+  .color-white {
+    color: #fff; }
+  
+  .transparent {
+    background-color: transparent !important;
+    background: transparent !important; }
+
+    /**==========================================**
+         BUTTON CSS 
+**===========================================**/
+
+.button {
+    border: solid 1px #fff;
+    background-image: linear-gradient(to right,#BCCD31,#BCCD31 50%,transparent 50%,transparent);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .2s ease-in;
+    cursor: pointer;
+    border-radius: 0px;
+    background-color: transparent;
+    margin: 0px;
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0px;
 }
 
+
+.button:hover{
+    color: #fff;
+    background-position: 0 0;
+    background-color: transparent;
+}
+
+
+/**==========================================**
+         BANNER CSS 
+**===========================================**/
+
+.banner{
+    h1{
+        color: #fff;
+    }
+
+    .jarallax {
+        position: relative;
+        z-index: 0;
+        min-height: 100vh;
+     }
+
+}
+    figcaption.overlay{
+        display: table;
+        width: 100%;
+        height: 100vh;
+        background-color: hsla(0, 0%, 0%, 0.2);
+        color: #fff;
+        .table {
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+            background: rgba(0, 0, 0, 0.4);
+            
+            h1{
+                position: relative;
+                &::after{
+                    border-bottom:solid 1px #fff;
+                }
+            }
+
+       
+        }
+    
+    }
+
+.caption-override{
+    width: 800px;
+    text-align: center;
+    display: inline-block;
+    }
+    
+/**==========================================**
+         JARALLAX CSS 
+**===========================================**/
+.jarallax {
+    position: relative;
+    z-index: 0;
+    min-height: 600px;
+ }
+  
+  .jarallax .jarallax-img {
+    position: absolute;
+    object-fit: cover;
+    /* support for plugin https://github.com/bfred-it/object-fit-images */
+    font-family: 'object-fit: cover;';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; }
+
+    .work-thumb-image{
+        .jarallax{
+            min-height: 300px;
+        } 
+    }
+
+    #work{
+        figcaption.overlay{
+            height: 100px;
+        }
+   
+
+    }
+
+/**==========================================**
+         Taps CSS 
+**===========================================**/
+
+.tabs-override{
+background: transparent;
+border: none;
+display: table;
+
+.tabs-title>a:focus, .tabs-title>a[aria-selected=true]{
+    background: transparent;
+    color: #BCCD31;
+    border-bottom: solid 2px #BCCD31;
+    padding: 5px 0px;
+}
+.tabs-title>a{
+    padding: 5px 0px;
+    text-decoration: none;
+    color: #666;
+    font-size: 18px;
+
+}
+
+li.tabs-title{
+    float: left;
+    margin: 0 20px;
+}
+}
+
+/**==========================================**
+         Caree loader CSS 
+**===========================================**/
+
+.border-sides {
+    border-right: 1px solid #cecaca;
+    border-left: 1px solid #cecaca;
+}
+
+
+#Career{
+.grid-x{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    &:nth-child(even){
+        background: #F6F6F6;
+    }
+
+    &:nth-child(odd){
+        background: #fff;
+    } 
+    
+    h1{
+        font-size: 18px;
+        text-align: center;
+        line-height: 75px;
+    }
+}
+
+
+i {
+    font-size: 40px;
+    color: #BCCD31;
+}
+}
+
+#blog{
+    .callout.primary{
+        border: none;
+        height: 200px;
+        background-color: #F6F6F6;
+        h1{ 
+            color: #BCCD31;
+            font-size: 16px;
+        }
+        p{
+            color: #000;
+            font-family: "Ageone"; 
+        }
+        }
+
+
+
+}
+
+#contact{
+h1,p{
+color: #fff;
+}
+.wrapper-caption {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+form{
+    display: table;
+    width: 600px;
+    margin: 0 auto;
+    input,textarea{
+        background-color: transparent;
+        color: #000;
+        border:solid 1px #fff;
+        border-radius: 0px;
+    }
+}
+}
+
+#about{
+    h1{
+        color: #fff;
+    }
+}
+
+
+#ourteam {
+
+img{
+   width: 100%;
+}
+}
+
+/**==========================================**
+         lazy loader CSS 
+**===========================================**/
+.image-loader {
+    background: #1E1E1E url(../assets/icon/loader.gif) center center no-repeat;
+    width: 100%; }
+  
+  
+  /**==========================================**
+           HEADINGS CSS 
+  **===========================================**/
+
+  .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    font:"Karla","Open Sans","Arial",sans-serif;  
+    color: #000000;
+
+}
+header{
+    z-index: 99;
+    background: #BCCD31;
+    padding: 10px;
+    position: fixed;
+}
 
 .sidebar {
     position: fixed;
     left: 0px;
     float: left;
-    background: #BCCD31;
-    overflow-y: auto;
+   
+    background-color: rgba(0,0,0,0.9);
+  // background: url(../assets/icon/galaxy.jpg) ;
+   background-size: contain;
+    overflow-y: hidden;
     overflow-x: hidden;
     width: 225px;
     height: 100%;
@@ -35,17 +626,21 @@ body {
     /* padding-top: 42px; */
     will-change: width;
     transition: width 0.3s, background 0.3s;
-    
+    .sidebar-transparent{
+       // background-color: rgb(0,0,0);
+      //  background-color: rgba(0,0,0,0.70);
+    }
 
-    span{
+    span.menu{
         float: right;
         color: #fff;
         font-size: 30px;
-        background: rgba(188, 205, 49, 0.54);
-        height: 50px;
-        width: 50px;
-        line-height: 50px;
+        background: #191919;
+        height: 70px;
+        width: 70px;
+        line-height: 70px;
         text-align: center;
+        display: block;
     }
     + .wrapper {
         width: calc(100% - #{$sidebarWidth});
@@ -78,11 +673,13 @@ body {
     
     .sidebar-menu {
 
+
+
         i{
             position: relative;
             float: left;
-            width: 42px;
-            line-height: 42px;
+            width: 60px;
+            line-height: 60px;
             text-align: center;
         }
     }
@@ -143,8 +740,8 @@ body {
     .sidebar-menu a {
         display: block;
         width: 225px;
-        height: 52px;
-        line-height: 52px;
+        height: 60px;
+        line-height: 60px;
         border-bottom: solid #fff6 1px;
         padding: 0 16px 0 0;
         color: $sidebarFontColour;
@@ -160,7 +757,7 @@ body {
         &:focus {
             opacity: 1;
             outline-color: $mainThemeColour;
-            max-height: $touchSize;
+          
         }
     }
     
@@ -174,9 +771,9 @@ body {
         position: absolute;
         bottom: 100%;
         right: 0;
-        width: $touchSize;
-        height: $touchSize;
-        background: $sidebarActionColour;
+        width: 60px;
+        height: 60px;
+        background: rgba(255, 255, 255, 0.05);
     }
     
     .has-children > ul:before {
@@ -233,19 +830,23 @@ body {
 
 
 .sidebar-toggle {
-    height: 50px;
-    background: rgba(0, 0, 0, 0.39);
+    height: 70px;
+  //  background:rgba(255, 255, 255, 0.28);
+  background: #BCCD31;
 }
 
 
 .social {
     clear: both;
-    display: table;
-    background-color: #231F20;
-    height: 37%;
+    background-color: #BCCD31;
     width: 100%;
-    padding: 40% 16% 16% 16%;
+    text-align: center;
+    margin: 0 auto;
+    height: 120px;
 
+h1{
+    font-size: 16px;
+}
 a i{
     border-radius: 50%;
     width: 28px;
@@ -260,6 +861,17 @@ a i{
 a{
     &:nth-child(1) i{
         margin-left: 0px;
+        background-color: #3b5998;
+    }
+    &:nth-child(2) i{
+        background-color: #FF1493;
+    }
+    &:nth-child(3) i{
+        background-color: #0c9aca;
+    }
+
+    &:nth-child(4) i{
+        background-color: #CF3427;
     }
 }
 }
